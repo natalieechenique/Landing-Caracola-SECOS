@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Dona";
+  src: url("./Fonts/Dona.otf");
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  text-align: center;
+  font-family: 'Dona', Arial, sans-serif;
+  z-index: -1;
+}
+
+.sea-bg {
+  background-image: url("images/fondo3.png");
+  width: 100%;
+  background-size: cover;
+}
+
+/* Contenedor de info */
+.cont__main {
+  width: 60%;
+  text-align: center;
+}
+
+.logo {
+  width: 380px;
+}
+
+.text__one {
+  font-size: 25px;
+  font-family: "Dona";
+  font-weight: bold;
+}
+
+.text__two {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.text__three {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.text__four {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.btn {
+  --bs-btn-padding-y: 0.6rem;
+  --bs-btn-padding-x: 3rem;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px -6px #000000;
+  color: white;
+  border: solid 1px white;
+}
+
+.sound__wsp.btn {
+  background-color: #0b144600;
+  font-size: 18px;
+  --bs-btn-padding-y: 0.6rem;
+  --bs-btn-padding-x: 4rem;
+}
+
+.link__wsp {
+  background-color: #6A72B5;
+  border: solid 1px rgb(106, 116, 212);
+}
+
+.btn:hover {
+  background-color: #1f244233;
+  border: solid 1px rgb(106, 116, 212);
+  color: white;
+}
+
+.link__wsp i {
+  font-size: 24px;
+}
+
+.logo-fef {
+  width: 120px;
+}
+
+.logo-secos {
+  width: 120px;
+}
+
+.logo-milenio {
+  width: 140px;
+}
+
+.wsp__container {
+  margin-bottom: 50px;
+}
+
+.fa-whatsapp {
+  vertical-align: middle;
+}
+
+.footer__content {
+  height: 80px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+footer {
+  height: 80px;
+  background-color: #6a72b56e;
+  width: 100%;
+}
+
+
+@media (max-width: 649px) {
+
+  .cont__main {
+    width: 100%;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .logo-secos {
+    width: 70px;
+  }
+
+  .logo-milenio {
+    width: 80px;
+  }
+
+  .text__one {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .text__two {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+}
+
+@media (min-width: 650px) and (max-width: 958px) {
+
+  .cont__main {
+    width: 90%;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .logo-secos {
+    width: 90px;
+  }
+
+  .logo-milenio {
+    width: 100px;
+  }
+
+  .text__one {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .text__two {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+}
