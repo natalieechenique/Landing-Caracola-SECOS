@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="src/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+  <title>Proyecto Caracola</title>
+</head>
+
+<!-- jquery-ripples cz-shortcut-listen= true" -->
+
+<body class="d-flex flex-column min-vh-100 sea-bg">
+  <div class="container d-flex cont__main">
+    <div class="row main__row">
+      <div class="col-12 pt-5 pb-4 img-container d-flex align-items-center justify-content-center">
+        <img src="/src/images/Logo.png" alt="Logo Caracola" class="logo" />
+      </div>
+      <div class="col-12">
+        <p class="px-5 pb-4 text-light text__one">
+          En Proyecto Caracola, buscamos tus historias, anécdotas,
+          problemáticas y desafíos en torno a la costa y su sostenibilidad.
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="px-5 pb-5 text-light text__two">
+          Tu relato podrá ser parte de este proyecto, el cual recogerá las
+          vivencias de diversas personas en las zonas costeras de nuestro
+          país.
+        </p>
+      </div>
+      <div class="col-12">
+        <p class="px-5 pb-3 text-light text__two">
+          Te invitamos a escuchar algunos testimonios que nos han compartido:
+        </p>
+      </div>
+      <div class="col-12 pb-5">
+        <a class="sound__wsp btn" href="#"><i class="fa-solid fa-volume-high"></i></a>
+      </div>
+      <div class="col-12">
+        <p class="px-5 pb-2 text-light text__three">
+          ¿Te gustaría participar?<br />
+          ¡Escríbenos y construyamos juntos ‘la voz del mar’!
+        </p>
+      </div>
+      <div class="wsp__container col-12 pb-4">
+        <a class="link__wsp btn" href="#"><b>Enviar Whatsapp</b><i class="fa-brands fa-whatsapp ps-3"></i></a>
+      </div>
+
+      <div class="col-12">
+        <p class="px-5 pb-2 text-light text__four">
+          Iniciativa del Instituto Milenio en Socio-Ecología Costera (SECOS) y
+          Fundación Encuentros del Futuro, financiada por el programa de
+          Proyección al Medio Externo (PME) de la Iniciativa Científica
+          Milenio, programa de la Agencia Nacional de Investigación y
+          Desarrollo (ANID), perteneciente al Ministerio de Ciencia,
+          Tecnología, Conocimiento e Innovación de Chile.
+        </p>
+      </div>
+    </div>
+  </div>
+  <br />
+
+  <footer class="mt-auto">
+    <div class="row footer__content d-flex justify-content-space-between align-items-center">
+      <div class="col-4 text-center">
+        <img src="../src/images/Logo Milenio.png" alt="Logo Milenio" class="logo-milenio" />
+      </div>
+
+      <div class="col-4 text-center">
+        <img src="../src/images/logos fef-03.png" alt="Logo FEF" class="logo-fef" />
+      </div>
+
+      <div class="col-4 text-center">
+        <img src="../src/images/Logo Secos.png" alt="Logo Secos" class="logo-secos" />
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://kit.fontawesome.com/71f25bde4a.js" crossorigin="anonymous"></script>
+
+<!-- Función Ripple -->
+<!--  Función extra para que el canva de ripple se adapte a la resolución -->
+<script>
+  $(".sea-bg").ripples({
+    resolution: 600,
+    perturbance: 0.04,
+  });
+
+  $(document).ready(function () {
+    $(".sea-bg").ripples("updateSize");
+  });
+  $(window).resize(function () {
+    $(".sea-bg").ripples("updateSize");
+  });
+</script>
+
+</html>
